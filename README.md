@@ -15,19 +15,32 @@ git clone
 Создать новое виртуальное окружение можно командой:
 
 ```
-python3 -m venv uplift_env
+python3 -m venv .venv
 ```
 
-После его инициализации следующей командой
+После инициализации следующей командой
 
 ```
-. uplift_env/bin/activate
+source .venv/bin/activate
 ```
 
 установите в него необходимые Python-пакеты следующей командой
 
 ```
 pip install -r requirements.txt
+```
+
+Скачайте модифицированную библиотеку `scikit-uplift`:
+
+```
+git clone https://github.com/yandex-praktikum/mle-scikit-uplift-2025
+```
+После клонирования репозитория давайте для удобства дальнейшней работы переименуйте папку `mle-scikit-uplift-2025` в `sklift`, затем перенесите ее в окружение и удалите из проекта:
+
+```
+mv mle-scikit-uplift-2025 sklift 
+sudo cp -r ./sklift ./.venv/lib/python3.10/site-packages/ 
+rm -rf sklift
 ```
 
 # Полезный код
