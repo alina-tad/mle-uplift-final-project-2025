@@ -47,9 +47,9 @@ rm -rf sklift
 
 1. Создайте `.env` в корне проекта с переменными окружения (Postgres, S3, ключи и порт). Пример переменных в `env_example`.
 2. Выполните скрипт:
-    ```bash
+```bash
     bash mlflow_server/mlflow_run.sh
-    ```
+```
 
 # Полезный код
 
